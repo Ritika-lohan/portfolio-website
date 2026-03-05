@@ -1,0 +1,35 @@
+body {
+  font-family: 'Poppins', sans-serif;
+  color: #333;
+}
+
+h1, h2, h5 {
+  color: #0d6efd;
+}
+
+.nav-link {
+  font-weight: 500;
+  transition: 0.3s;
+}
+.ritika{max-height: 231px;}
+.nav-link:hover {
+  color: #0d6efd;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  transition: 0.3s ease-in-out;
+}
+
+.btn-primary {
+  background-color: #0d6efd;
+  border: none;
+}
+
+.btn-primary:hover {
+  background-color: #084298;
+}
+
+img {
+  object-fit: cover;
+}

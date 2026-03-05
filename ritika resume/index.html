@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ritika Lohan | Web Designer Portfolio</title>
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top shadow-sm">
+    <div class="container">
+      <a class="navbar-brand fw-bold" href="#">Ritika Lohan</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link active" href="#home">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+          <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section id="home" class="py-5 text-center bg-light">
+    <div class="container">
+      <h1 class="fw-bold mb-3">Hi, I'm Ritika — a Web Designer & Frontend Developer</h1>
+      <p class="lead mb-4">I build modern, responsive websites using HTML, CSS, JavaScript, and Bootstrap.</p>
+      <a href="#projects" class="btn btn-primary btn-lg">View My Work</a>
+    </div>
+  </section>
+
+  <!-- Projects Section -->
+  <section id="projects" class="py-5">
+    <div class="container text-center">
+      <h2 class="fw-bold mb-4">My Projects</h2>
+      <div class="row row-cols-1 row-cols-md-2 g-4">
+
+        <div class="col">
+          <div class="card h-100 shadow-sm">
+            <img src="images/billdings.png" class="card-img-top" alt="">
+            <div class="card-body">
+              <h5 class="card-title">Billdings Website</h5>
+              <p class="card-text">A modern real estate website built using HTML, CSS, and JavaScript.</p>
+              <a href="https://billdings960.netlify.app/" target="_blank" class="btn btn-outline-primary">View Live</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="card h-100 shadow-sm">
+            <img src="images/construction.png" class="card-img-top" alt="">
+            <div class="card-body">
+              <h5 class="card-title">Construction Website</h5>
+              <p class="card-text">Responsive landing page for a construction company.</p>
+              <a href="https://construction980.netlify.app/" target="_blank" class="btn btn-outline-primary">View
+                Live</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="card h-100 shadow-sm">
+            <img src="images/medicenter.png" class="card-img-top" alt="">
+            <div class="card-body">
+              <h5 class="card-title">Medi Center Website</h5>
+              <p class="card-text">Clean and professional medical website.</p>
+              <a href="https://medi-center960.netlify.app/" target="_blank" class="btn btn-outline-primary">View
+                Live</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="card h-100 shadow-sm">
+            <img src="images/custom.png" class="card-img-top" alt="">
+            <div class="card-body">
+              <h5 class="card-title">Custom Website</h5>
+              <p class="card-text">Modern multipurpose business site.</p>
+              <a href="https://custom980.netlify.app/" target="_blank" class="btn btn-outline-primary">View Live</a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="about" class="py-5 bg-light">
+    <div class="container text-center">
+      <h2 class="fw-bold mb-4">About Me</h2>
+      <div class="row align-items-center">
+        <div class="col-md-5 mb-3 mb-md-0"> <img src="images/ritika.jpeg" alt="Ritika Lohan"
+            class="img-fluid rounded-3 shadow-sm ritika"> </div>
+        <div class="col-md-7 text-start">
+          <p class="lead">I'm a passionate web designer who loves creating clean and user-friendly websites for brands
+            and businesses. My goal is to combine creativity and code to deliver meaningful online experiences.</p>
+          <h6 class="fw-bold mt-3">Skills:</h6> <span class="badge bg-primary m-1">HTML</span> <span
+            class="badge bg-primary m-1">CSS</span> <span class="badge bg-primary m-1">JavaScript</span> <span
+            class="badge bg-primary m-1">Bootstrap</span> <span class="badge bg-primary m-1">Responsive Design</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section (Netlify Form) -->
+  <section id="contact" class="py-5 bg-light">
+    <div class="container">
+      <div class="text-center mb-4">
+        <h2 class="fw-bold">Contact Me</h2>
+        <p class="text-muted">Drop a message below!</p>
+      </div>
+
+      <div class="row justify-content-center">
+        <div class="col-md-8">
+
+          <form name="contact" method="POST" data-netlify="true" action="/" netlify-honeypot="bot-field">
+
+  <!-- Hidden field (Required for Netlify) -->
+  <input type="hidden" name="form-name" value="contact">
+  
+  <!-- Honeypot spam protection -->
+  <input type="hidden" name="bot-field">
+
+  <div class="mb-3">
+    <label class="form-label">Your Name</label>
+    <input type="text" class="form-control" name="name" required>
+  </div>
+
+  <div class="mb-3">
+    <label class="form-label">Your Email</label>
+    <input type="email" class="form-control" name="email" required>
+  </div>
+
+  <div class="mb-3">
+    <label class="form-label">Message</label>
+    <textarea class="form-control" name="message" rows="4" required></textarea>
+  </div>
+
+  <div class="text-center">
+    <button type="submit" class="btn btn-primary px-4 py-2">
+      Send Message
+    </button>
+  </div>
+
+</form>
+        <div class="modal fade" id="successModal" tabindex="-1">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content text-center p-4">
+      <h4 class="text-success">✅ Thank You!</h4>
+      <p>Your message has been sent successfully.</p>
+      <button class="btn btn-primary" data-bs-dismiss="modal">Close</button>
+    </div>
+  </div>
+</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="py-3 bg-light text-center">
+    <p class="mb-0">© 2025 Ritika Lohan | Designed with ❤️ using HTML, CSS & Bootstrap</p>
+  </footer>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<script>
+const form = document.querySelector("form");
+
+form.addEventListener("submit", function(e) {
+  e.preventDefault();
+
+  fetch("/", {
+    method: "POST",
+    body: new FormData(form)
+  })
+  .then(() => {
+    const modal = new bootstrap.Modal(document.getElementById('successModal'));
+    modal.show();
+    form.reset();
+  })
+  .catch((error) => {
+    alert("❌ Something went wrong.");
+  });
+});
+</script>
+</body>
+
+</html>
